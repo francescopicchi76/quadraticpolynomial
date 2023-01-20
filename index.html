@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QUADRATIC POLYNOMIAL</title>
+    <link rel="stylesheet" href="css/quadraticPolynomial_style.css">
+    <script type="text/javascript" src= "js/quadraticPolynomial.js"></script>
+  </head>
+  <header>
+    <h2>STUDY OF QUADRATIC POLYNOMIALS</h2>
+  </header>
+  <body>
+    <form method="post" name="modulo">
+      <fieldset class="cornice">
+        <legend>PARAMETERS</legend>
+        Given a quadratic polynomial ax<sup>2</sup>+bx+c, insert its parameters and click on the button below to study it; an empty field is equivalent to 0.
+        <p><label for="a">a =</label>
+        <input type="text" name="a"></p>
+        <p><label for="b">b = </label>
+        <input type="text" name="b"></p>
+        <p><label for="c">c =</label>
+        <input type="text" name="c"></p>
+        <input class="button" type="button" value = "Show results" onclick="giveSolutions()">
+        <input class="button" type="button" value = "Clear fields" onclick="clearFields()">
+      </fieldset>
+      <br>
+      <fieldset class="cornice">
+        <legend>RESULTS</legend>
+        <p class="resultsfield">
+          <label for="solutions">SOLUTIONS:</label>
+          <textarea name="messageSolutions" rows="4" cols="40" readonly></textarea>
+          <label for="solutions">&Delta;=</label>
+          <input type="text" name="delta" readonly>
+        </p>
+        <p class="resultsfield">
+          <label for="sign">STUDY OF THE SIGN:</label>
+          <textarea name="messageSign" rows="4" cols="40" readonly></textarea>
+        </p>
+      </fieldset>
+      </form>
+  </body>
+</html>
