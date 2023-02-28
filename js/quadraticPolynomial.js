@@ -16,8 +16,8 @@ function clearFields() {
   document.getElementById("b").value = "";
   document.getElementById("c").value = "";
   document.getElementById("delta").value = "";
-  document.getElementById("messageSolutions").value = "";
-  document.getElementById("messageSign").value = "";
+  document.getElementById("message-solutions").value = "";
+  document.getElementById("message-sign").value = "";
 }
 
 //This function analyses the parameters and the discriminant through conditional statements to define
@@ -71,6 +71,9 @@ function giveSolutions(){
     }
   }
 }
-document.getElementById("messageSolutions").value = risultato;
-document.getElementById("messageSign").value = risultatoSegno;
+document.getElementById("message-solutions").value = risultato;
+document.getElementById("message-sign").value = risultatoSegno;
 }
+
+document.getElementById("show-results").addEventListener('click', giveSolutions);
+document.getElementById("clear-fields").addEventListener('click', clearFields);
