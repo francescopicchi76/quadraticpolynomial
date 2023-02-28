@@ -33,7 +33,7 @@ body {
 
 h4 {
   text-align: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .parametri {
@@ -45,7 +45,7 @@ h4 {
   border-style: solid;
   border-radius: 1rem;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .resultsfield {
