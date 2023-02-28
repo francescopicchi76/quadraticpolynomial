@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>QUADRATIC POLYNOMIAL</title>
     <link rel="stylesheet" href="css/quadraticPolynomial_style.css">
-    <script type="text/javascript" src= "js/quadraticPolynomial.js"></script>
   </head>
   <header>
     <h1>STUDY OF QUADRATIC POLYNOMIALS</h1>
@@ -30,8 +29,8 @@
         </div>
       </section>
         <div class="bottoni">
-          <input class="button" type="button" value = "Show results" onclick="giveSolutions()">
-          <input class="button" type="button" value = "Clear fields" onclick="clearFields()">
+          <input class="button" type="button" value = "Show results" id="show-results">
+          <input class="button" type="button" value = "Clear fields" id="clear-fields">
         </div>
       <section class="cornice" id="risultati">
         <h4>RESULTS</h4>
@@ -41,13 +40,14 @@
         </div>
         <div class="resultsfield">
           <label for="solutions">SOLUTIONS:</label>
-          <textarea id="messageSolutions" rows="4" cols="30" readonly></textarea>
+          <textarea id="message-solutions" rows="3" cols="40" readonly></textarea>
         </div>
         <div class="resultsfield">
           <label for="sign">SIGN:</label>
-          <textarea id="messageSign" rows="4" cols="30" readonly></textarea>
+          <textarea id="message-sign" rows="3" cols="40" readonly></textarea>
         </div>
       </section>
     </div>
+    <script type="text/javascript" src= "js/quadraticPolynomial.js"></script>
   </body>
 </html>
