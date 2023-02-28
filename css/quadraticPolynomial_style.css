@@ -1,24 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 header {
-  background-color: grey;
+  background-color: rgb(55, 122, 247);
   text-align: center;
   color: white;
+  padding: 10px 0;
+  margin: 0 20px;
 }
+
+header>h1, header>h2 {
+  margin: 0;
+}
+
 body {
-  background-color: lightgrey;
-  background-image: url(../images/paper.jpg);
-  font-size: 130%;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(rgba(229, 225, 225, 0.5), rgba(255, 253, 253, 0.7)), url(../images/paper.jpg) center no-repeat;
+	background-size: cover;
+  font-size: 1.8rem;
+  margin: 0;
 }
+
+#container {
+  max-width: 1250px;
+  margin: 10px auto;
+}
+
+h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.parametri {
+  margin: 10px auto;
+}
+
 .cornice {
   border-color: red;
   border-style: solid;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 20px;
 }
+
+.resultsfield {
+  margin: 15px auto;
+}
+
+.bottoni {
+  text-align: center;
+}
+
 .button {
-  background-color: grey;
+  outline: none;
+  background-color: #4a5396;
   color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  border: solid 1px rgb(55, 122, 247);
 }
-textarea {
+
+textarea, label, input {
   vertical-align: middle;
-  font-size: 102%;
+  font-size: 1.6rem;
+  max-width: 100%;
 }
