@@ -7,9 +7,9 @@ html {
 }
 
 header {
-  background-color: rgb(55, 122, 247);
+  background-color: rgba(53, 63, 111, 0.7);
   text-align: center;
-  color: white;
+  color: #fff;
   padding: 10px 0;
   margin: 0 20px;
 }
@@ -20,7 +20,8 @@ header>h1, header>h2 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(rgba(229, 225, 225, 0.5), rgba(255, 253, 253, 0.7)), url(../images/paper.jpg) center no-repeat;
+  min-height: 100vh;
+  background: linear-gradient(rgba(229, 225, 225, 0.5), rgba(255, 253, 253, 0.7)), url(../images/paper.jpg) center no-repeat fixed;
 	background-size: cover;
   font-size: 1.8rem;
   margin: 0;
@@ -41,7 +42,7 @@ h4 {
 }
 
 .cornice {
-  border-color: red;
+  border-color: #15bd90;
   border-style: solid;
   border-radius: 1rem;
   padding: 10px;
@@ -57,18 +58,31 @@ h4 {
 }
 
 .button {
-  outline: none;
-  background-color: #4a5396;
-  color: white;
+  background: #15bd90;
+  color: #fff;
   font-weight: bold;
   font-size: 1.8rem;
-  border-radius: 2rem;
-  padding: 10px 20px;
-  border: solid 1px rgb(55, 122, 247);
+  border-radius: 50px;
+  padding: 14px 28px;
+  border: solid 1px #15bd90;
+  cursor: pointer;
 }
 
 textarea, label, input {
   vertical-align: middle;
   font-size: 1.6rem;
   max-width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .button {
+    background: transparent;
+    color: #15bd90;
+    transition: all 0.3s;
+  }
+
+  .button:hover {
+    background: #15bd90;
+    color: #fff;
+  }
 }
