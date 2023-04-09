@@ -1,2 +1,2 @@
 # HTML/CSS/JS
-Here is a simple web programme to study a quadratic polynomial.
+A simple web programme to study a quadratic polynomial.
